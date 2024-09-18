@@ -1,0 +1,15 @@
+header {
+  img {
+    max-height: $height-logo;
+  }
+  nav {
+    @include my-proeties(font-size, 20px);
+    @include my-proeties(background-color, yellow);
+    animation: navAppear 1s;
+  }
+  button {
+    &:hover {
+      background-color: pink;
+    }
+  }
+}

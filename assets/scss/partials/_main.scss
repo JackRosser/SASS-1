@@ -1,0 +1,35 @@
+main {
+  @include my-proeties(background-color, red);
+  button {
+    padding: 1rem;
+    border-radius: 20px;
+    &:hover {
+      background-color: pink;
+    }
+  }
+  animation: appear 1s;
+}
+
+// @keyframes appear {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+$istitutional-color: (
+  "dark": black,
+  "violet": center,
+  "passion": red,
+  "valentine": pink,
+  "holiday": yellow
+);
+
+@each $tema, $color in $istitutional-color {
+  .#{$tema} {
+    color: $color;
+  }
+}

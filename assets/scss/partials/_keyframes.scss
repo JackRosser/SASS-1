@@ -1,0 +1,23 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(-100%) scale(1.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}
+
+@keyframes navAppear {
+  from {
+    opacity: 0;
+    transform: translate(100%) scale(3);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}
